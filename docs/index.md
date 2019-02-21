@@ -34,10 +34,13 @@ Pipe exaple:
 
 ## General methods
 
-| Method                    | Return type   | Description   |
-| :------------------------ |:------------- | ------------- |
-| isFunction(input)         | boolean       | Check whether a variable contains a function or not. |
-| scope(input)              | any           | Extract data from an object, with a scope. |
+| Method                                             | Return type   | Description   |
+| :------------------------------------------------- |:------------- | ------------- |
+| dotsToCamelCase(input: string, ucFirst: boolean)   | boolean       | Convert a dot.seperated.string into a camelCaseString. |
+| isFunction(input: any)                             | boolean       | Check whether a variable contains a function or not. |
+| scope(data: any, scope: string)                    | any           | Extract data from an object, with a scope. |
+| scopeChild(scope: string, child: number, includeParents = false) | string | Get a part of a scope. |
+| scopeCount(scope: string)                          | number        | Count the number of "steps" or children in a scope. |
 
 
 ## Element methods
