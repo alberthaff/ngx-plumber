@@ -5,12 +5,12 @@ export function scope(data: any, scopeString: string): any {
         return data;
     }
 
-    if (typeof data === 'undefined') {
+    if (typeof data === 'undefined' || data === null) {
         return null;
     }
 
     scopeString.split('.').forEach((part) => {
-        if (typeof data === 'undefined') {
+        if (typeof data === 'undefined' || data === null) {
             return null;
         }
         data = data[part];

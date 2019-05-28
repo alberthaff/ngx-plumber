@@ -6,11 +6,15 @@ import {ScopePipe} from './methods/scope';
 import {DotsToCamelCasePipe} from './methods/dots-to-camel-case';
 import {ScopeChildPipe} from './methods/scope-child';
 import {ScopeCountPipe} from './methods/scope-count';
+import {IssetElsePipe} from './methods/isset-else';
+import {PadPipe} from './methods/pad';
 
 const methods = [
     GlobalOffsetPipe,
     IsDescendantPipe,
     IsFunctionPipe,
+    IssetElsePipe,
+    PadPipe,
     ScopePipe,
     ScopeChildPipe,
     ScopeCountPipe,
