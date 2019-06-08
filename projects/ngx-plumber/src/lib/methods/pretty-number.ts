@@ -5,7 +5,7 @@ export function prettyNumber(number: any, decimals: number = 2): string {
         return '';
     }
 
-    const float = parseFloat(number);
+    const float = parseFloat2(number);
 
     return float.toLocaleString('da-DK', { // TODO Get locale from global settings.
         maximumFractionDigits: decimals,
@@ -14,7 +14,7 @@ export function prettyNumber(number: any, decimals: number = 2): string {
     });
 }
 
-function parseFloat(input): number {
+function parseFloat2(input): number {
     if (input.toString().replace(/[^0-9.,]/g, '') === '') {
         return 0;
     } else if (isNaN(input)) {
