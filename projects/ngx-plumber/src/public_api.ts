@@ -11,6 +11,7 @@ export * from './lib/methods/is-descenant';
 export * from './lib/methods/is-function';
 export * from './lib/methods/isset-else';
 export * from './lib/methods/pad';
+export * from './lib/methods/pretty-number';
 export * from './lib/methods/scope';
 export * from './lib/methods/scope-child';
 export * from './lib/methods/scope-count';

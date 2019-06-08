@@ -11,7 +11,7 @@ export function pad(input: any, size: number): string {
 }
 
 @Pipe({
-    name: 'isFunction'
+    name: 'pad'
 })
 export class PadPipe implements PipeTransform {
     transform(input: any, size: number) {

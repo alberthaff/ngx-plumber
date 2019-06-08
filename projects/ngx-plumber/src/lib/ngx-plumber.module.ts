@@ -8,6 +8,7 @@ import {ScopeChildPipe} from './methods/scope-child';
 import {ScopeCountPipe} from './methods/scope-count';
 import {IssetElsePipe} from './methods/isset-else';
 import {PadPipe} from './methods/pad';
+import {PrettyNumberPipe} from './methods/pretty-number';
 
 const methods = [
     GlobalOffsetPipe,
@@ -15,6 +16,7 @@ const methods = [
     IsFunctionPipe,
     IssetElsePipe,
     PadPipe,
+    PrettyNumberPipe,
     ScopePipe,
     ScopeChildPipe,
     ScopeCountPipe,
