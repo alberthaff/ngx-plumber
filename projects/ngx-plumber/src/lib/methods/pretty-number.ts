@@ -15,7 +15,9 @@ export function prettyNumber(number: any, decimals: number = 2): string {
 }
 
 function parseFloat2(input): number {
-    if (input.toString().replace(/[^0-9.,]/g, '') === '') {
+    if (input === null || typeof input === 'undefined') {
+        return 0;
+    } else if (input.toString().replace(/[^0-9.,]/g, '') === '') {
         return 0;
     } else if (isNaN(input)) {
         return parseFloat(input.toString().replace(/\./g, '').replace(',', '.'));
