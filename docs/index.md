@@ -49,3 +49,8 @@ Pipe exaple:
 | :------------------------ |:------------- | ------------- |
 | isDescendant(parent, child)  | boolean        | Check whether an element is a descendant of an other element. |
 | globalOffset(elementRef)  | {x, y}        | Get the global offset of an HTML element. |
+
+## Date and time methods
+| Method                    | Return type   | Description   |
+| :------------------------ |:------------- | ------------- |
+| ifDeltaSeconds(date, seconds)  | boolean        | Check whether a certain date + x-amount of seconds has been passed. |

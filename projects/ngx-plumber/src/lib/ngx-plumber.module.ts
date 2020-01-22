@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {IsFunctionPipe} from './methods/is-function';
+import {IfDeltaSecondsPipe} from './methods/if-delta-seconds';
 import {GlobalOffsetPipe} from './methods/global-offset';
 import {IsDescendantPipe} from './methods/is-descenant';
 import {ScopePipe} from './methods/scope';
@@ -12,6 +13,7 @@ import {PrettyNumberPipe} from './methods/pretty-number';
 
 const methods = [
     GlobalOffsetPipe,
+    IfDeltaSecondsPipe,
     IsDescendantPipe,
     IsFunctionPipe,
     IssetElsePipe,
