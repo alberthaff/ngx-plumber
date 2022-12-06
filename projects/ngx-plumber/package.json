@@ -1,6 +1,6 @@
 {
     "name": "ngx-plumber",
-    "version": "0.0.1",
+    "version": "0.2.1",
     "description": "A collection of pipes for Angular.",
     "author": "Albert Haff <ahn@haffdata.com>",
     "license": "MIT",
@@ -12,9 +12,5 @@
     "repository": {
         "url": "https://github.com/alberthaff/ngx-plumber"
     },
-    "homepage": "https://alberthaff.dk/projects/ngx-plumber/docs/v1",
-    "peerDependencies": {
-        "@angular/common": "^7.1.0",
-        "@angular/core": "^7.1.0"
-    }
+    "homepage": "https://alberthaff.dk/projects/ngx-plumber/docs/v1"
 }
