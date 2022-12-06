@@ -1,6 +1,6 @@
 import {Pipe, PipeTransform} from '@angular/core';
 
-export function prettyNumber(number: any, decimals: number = 2): string {
+export function prettyNumber(number: any, decimals: number = 2, thousandSeparator = true): string {
     if (typeof number === 'undefined') {
         return '';
     }
@@ -10,7 +10,8 @@ export function prettyNumber(number: any, decimals: number = 2): string {
     return float.toLocaleString('da-DK', { // TODO Get locale from global settings.
         maximumFractionDigits: decimals,
         minimumFractionDigits: decimals,
-        minimumIntegerDigits: 1
+        minimumIntegerDigits: 1,
+        useGrouping: thousandSeparator,
     });
 }
 
