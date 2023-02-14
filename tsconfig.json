@@ -20,10 +20,10 @@
     ],
     "paths": {
       "ngx-plumber": [
-        "dist/ngx-plumber"
+        "dist"
       ],
       "ngx-plumber/*": [
-        "dist/ngx-plumber/*"
+        "dist/*"
       ]
     }
   }
